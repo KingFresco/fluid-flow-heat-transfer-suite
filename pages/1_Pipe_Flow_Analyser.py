@@ -136,7 +136,7 @@ try:
         file_name="pipe_flow_results.csv",
         mime="text/csv",
     )
-    st.dataframe(export_df, use_container_width=True)
+    st.dataframe(export_df, width="stretch")
 
 except ValueError as e:
     st.error(f"Invalid input: {e}")

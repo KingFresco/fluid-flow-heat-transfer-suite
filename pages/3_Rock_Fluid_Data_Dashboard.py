@@ -57,10 +57,10 @@ elif use_sample:
 
 if df is not None:
     st.subheader("Data preview")
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df, width="stretch")
 
     st.subheader("Summary statistics")
-    st.dataframe(df.describe(), use_container_width=True)
+    st.dataframe(df.describe(), width="stretch")
 
     # Try to find a porosity-like column for filtering
     porosity_cols = [c for c in df.columns if "poro" in c.lower()]
@@ -79,7 +79,7 @@ if df is not None:
             filtered_df = df[poro_series > threshold]
 
             st.subheader(f"Filtered data ({len(filtered_df)} of {len(df)} samples)")
-            st.dataframe(filtered_df, use_container_width=True)
+            st.dataframe(filtered_df, width="stretch")
 
             st.subheader("Charts")
             c1, c2 = st.columns(2)
