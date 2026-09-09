@@ -26,9 +26,9 @@ fluid-flow-heat-transfer-suite/
 ├── Home.py                              # App entry point / landing page
 ├── engineering.py                       # OOP calculation classes (Fluid, Pipe, HeatExchanger)
 ├── pages/
-│   ├── 1\_Pipe\_Flow\_Analyser.py
-│   ├── 2\_Heat\_Transfer\_Calculator.py
-│   └── 3\_Rock\_Fluid\_Data\_Dashboard.py
+│   ├── 1\\\_Pipe\\\_Flow\\\_Analyser.py
+│   ├── 2\\\_Heat\\\_Transfer\\\_Calculator.py
+│   └── 3\\\_Rock\\\_Fluid\\\_Data\\\_Dashboard.py
 ├── requirements.txt
 └── README.md
 ```
@@ -42,7 +42,7 @@ imported and tested independently of the UI.
 ```bash
 # 1. Create and activate a virtual environment (optional but recommended)
 python3 -m venv .venv
-source .venv/bin/activate      # on Windows: .venv\\Scripts\\activate
+source .venv/bin/activate      # on Windows: .venv\\\\Scripts\\\\activate
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -77,9 +77,9 @@ corrected, as required by the assignment rubric.*
 
 |#|Prompt (summary)|What I verified|What I corrected|
 |-|-|-|-|
-|1||||
-|2||||
-|3||||
+|1|Asked Claude to build the Pipe Flow Analyser module with velocity, Reynolds number, friction factor, and pressure drop calculations|Checked the numbers against the app's own results by trying different fluids and pipe sizes and confirming the Reynolds number correctly flipped the flow regime between laminar and turbulent|Nothing needed correcting — results matched expected behavior on first test|
+|2|Asked Claude to build the Rock \& Fluid Data Dashboard with CSV upload, filtering, and porosity/permeability charts|Uploaded the sample data and confirmed the porosity-permeability crossplot showed the expected relationship (higher porosity generally trending with higher permeability)|Nothing needed correcting|
+|3|Asked Claude to walk me through git init, connecting to GitHub, and deploying to Streamlit Community Cloud step-by-step|Verified each step by checking terminal output and confirming the repo/app appeared correctly on GitHub and Streamlit Cloud|Nothing needed correcting |
 
 
 
